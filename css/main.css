@@ -1,0 +1,249 @@
+
+/* STYLESHEET MAIN SETTINGS */
+
+* {
+    cursor: url(../misc/cuscursor.png), default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:  #0b0a09;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 1s ease;
+    max-width: 100%;
+    width: 100% !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #0b0a09;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: url(../misc/hovercur.png), default;
+}
+
+/* BUTTONS */
+
+.btn-primary, .btn-primary:focus {
+    background-color: #0b0a09;
+    border-color: #0b0a09;
+}
+
+.btn-primary:hover {
+    background-color: #FFF;
+    border-color: #0b0a09;
+    color: #0b0a09;
+}
+
+.btn-primary:active {
+    background-color: #FFF !important;
+    border-color: #0b0a09 !important;
+}
+
+/* INTRO */
+
+.intro h2, .intro p {
+    color: #FFF;
+}
+
+.navbar {
+    background-color: #0b0a09;
+    transition: top 0.7s;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 4rem;
+    color: #FFF;
+}
+.header {
+    margin: 0;
+    margin-top: 250px;
+    height: 600px;
+    width: auto;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+    font-size: 1.75rem;
+}
+
+/* BACKGROUND ANIMATION */
+/* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* colours */
+  .color-white {
+    background-color: #FFF;
+  }
+  .color-dark {
+    background-color: #0b0a09;
+  }
+  
+/* NAV-LINK ANIMATION */
+
+  .nav-link {
+    position: relative;
+    display: block;
+  }
+  
+  .nav-link:before, .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+  
+  .nav-link:before {
+    left: -1px;
+  }
+  .nav-link:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .nav-link:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .nav-link:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+
+
+/* PROJECTS */
+
+
+.projects {
+    margin-top: 425px;
+}
+
+.projects h2, .design h2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.projects p, .design p {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.design {
+    padding-bottom: 50px;
+}
+
+.modal-header .close {
+    font-size: 4rem;
+    color: #0b0a09;
+  }
+
+.modal-dialog {
+    max-width: 80%;
+}
+
+.skills {
+    min-height: 40vh !important;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.line1, .line2, .line3, .line4   {
+    display: block;
+    height: 15px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.line1, .line2, .line3, .line4 {
+    background-color: #0b0a09;
+    border-radius: 25px;
+}
+
+.line1 {
+    width: 60%;
+}
+
+.line2 {
+    width: 70%;
+}
+
+.line3 {
+    width: 50%;
+}
+
+.line4 {
+    width: 25%;
+}
+
+.vertical {
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+    border: 5px solid #0b0a09;
+    border-radius: 3px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.contact h1 {
+    border: 5px solid #FFF;
+}
+
+.contact p, .contact h1, .contact h3, .contact h6 {
+    color: #FFF;
+}
+
+.contact h6 {
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.contact a:hover {
+    color: #FFF;
+}
+
+@media (max-width: 992px) { 
+    .vertical {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 25px;
+    }
+ }
+
+ @media (min-width: 992px) { 
+    .vertical {
+        font-size: 2.5rem;
+    }
+ }
